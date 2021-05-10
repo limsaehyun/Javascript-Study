@@ -10,7 +10,7 @@
 * 문자열
 * 불린값
 
-위의 값들을 제외한 것들을 참조 타입이라고 한다.
+위의 값들을 제외한 것들을 참조 타입(객체)이라고 한다.
 
 
 
@@ -150,12 +150,13 @@ console.log(arr)
 * ```javascript
   const fruit = ['a' , 'aa', 'aaa', 'aaaa', 'aaaaa'];
   console.log(fruit.findIndex(e => e.length > 3)); // length가 3이 넘는 인덱스를 출력
+  ```
 ```
   
 * ```javascript
   const fruit = [1, 2, 3, 4, 5, 6, 7];
   console.log(fruit.findIndex(i=>i%4==0)); // 4의 배수 출력
-  ```
+```
 
 * map() 메서드 : 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새로운 배열을 반환합니다.
 
@@ -206,3 +207,51 @@ console.log(arr)
   // cur 값은 계속 증가해가면서 acc에는 모두 누적된다.
   ```
 
+
+
+**키 변환**
+
+```javascript
+const obj = {
+	name: 'hyun',
+	ageL '17',
+	location: 'siheung'
+};
+
+const {name:nickname, age, location} = obj // name을 닉네임으로 사용
+console.log(nickname)
+```
+
+
+
+**함수를 만드는 방법**
+
+
+
+**함수 선언식**
+
+```javascript
+function foo() {
+    return "이것은 함수입니다.";
+}
+console.log(foo());
+```
+
+
+
+**함수 표현식**
+
+```javascript
+const add = function(x, y) {
+    return x+y;
+}
+
+console.log(add(3,4)); // 3 + 4= 7
+```
+
+
+
+**함수 호이스팅**
+
+* 함수를 끌어올리는 것
+* 표현식 방식은 호이스팅이 발생하지 않음

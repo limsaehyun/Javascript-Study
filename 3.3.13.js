@@ -6,5 +6,5 @@ const obj = {
     age: '17',
     location: 'siheung'
 };
-const {name, age:su, location} = obj
-console.log(su);
+const {name, age:su, location} = obj /// age를 su로 사용
+console.log(su)
